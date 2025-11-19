@@ -33,3 +33,14 @@ You can run the app via GUI or via this command
 ./gradlew bootRun
 ```
 
+## Linting
+We are using [spotless](https://github.com/diffplug/spotless) to do linting checks.
+The linting checks will automatically run at build. 
+But if you want to check the linting without building, use this command:
+```declarative
+./gradlew check
+```
+To fix any linting issues, run this:
+```declarative
+./gradlew :spotlessApply
+```

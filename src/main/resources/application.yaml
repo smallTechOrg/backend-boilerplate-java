@@ -1,3 +1,15 @@
 spring:
   application:
     name: backend-boilerplate-java
+
+management:
+  health:
+    diskspace:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
