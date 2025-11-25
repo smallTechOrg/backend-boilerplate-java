@@ -20,6 +20,10 @@ but we will also be using to install and maintain different Java runtimes.
 Install Java using the IntelliJ console.
 Refer `.tool-versions` for the exact java version.
 
+### Install Postgres (with PostGIS)
+We are currently using version 18 of postgres.
+And version 3.6 of PostGIS.
+
 ### Build using Gradle
 Once you have downloaded the JDK onto IntelliJ, you can build using gradle.
 You can do this via the GUI or via this command:
@@ -32,6 +36,7 @@ You can run the app via GUI or via this command
 ```declarative
 ./gradlew bootRun
 ```
+Verify if the app is up on http://localhost:8080/actuator/health
 
 ## Linting
 We are using [spotless](https://github.com/diffplug/spotless) to do linting checks.
